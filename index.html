@@ -13,8 +13,9 @@
     <link rel="apple-touch-icon" sizes="80x80" href="assets/logo/icon80.png" />
     <link rel="apple-touch-icon" sizes="114x114" href="assets/logo/icon114.png" />
     <link rel="apple-touch-icon-precomposed" sizes="android-only" href="assets/logo/icon57.png"/>
-<!--  
-    <script type = 'text/javascript' src = "js/libjs/add_base_scripts.js" > </script>  
+  <!--
+    <script type = 'text/javascript' src = "/hostinger/js/libjs/add_base_scripts.js" > </script>  
+    K:\Program Files\OpenServer\domains\localhost\hostinger\js
     <script type = 'text/javascript' src = "js/app/AppAir-radio.js" > </script>
  -->     
     <script>
@@ -50,13 +51,14 @@
 </head>
 <body onload='init();'>
 <script>
-    name = 'Air-radio';
+    name = 'Test';
     document.body.addEventListener('touchmove', function(event) {
                                                     event.preventDefault();
                                                 }, false);        
 /**      
 **/ function init() {     
-//        disableSelection(document.body);
+        disableSelection(document.body); 
+        docment.write(name);    
 //        debug = false;   
 //        mobile = true;
 //        new AddPropNavigator();    
